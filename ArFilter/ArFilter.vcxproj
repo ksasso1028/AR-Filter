@@ -170,6 +170,10 @@
     </ClCompile>
     <ClCompile Include="prepCascade.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\..\..\..\open\opencv\sources\data\haarcascades\haarcascade_frontalface_alt.xml" />
+    <Xml Include="..\..\..\..\..\..\open\opencv\sources\data\haarcascades\haarcascade_frontalface_alt2.xml" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

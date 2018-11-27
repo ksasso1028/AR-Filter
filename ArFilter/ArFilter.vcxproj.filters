@@ -39,4 +39,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\..\..\..\open\opencv\sources\data\haarcascades\haarcascade_frontalface_alt2.xml">
+      <Filter>Source Files</Filter>
+    </Xml>
+    <Xml Include="..\..\..\..\..\..\open\opencv\sources\data\haarcascades\haarcascade_frontalface_alt.xml">
+      <Filter>Source Files</Filter>
+    </Xml>
+  </ItemGroup>
 </Project>
