@@ -10,7 +10,7 @@
 
 //add variables here that i will use in function
 //PNG SHOULD BE PRE  LOADED
-
+//before adding more functions need to optimize runtime.
 void detectAndShow(cv::Mat &in,cv::Mat &grey);
 
  
