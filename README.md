@@ -2,9 +2,8 @@
 # Digital Image Processing Final Project.
 
 
-Custom made AR-Filter using OPENCV in c++ with custom filters.
-Custom-Filters made in photoshop and OPENCV.
-Machine learning and object detection done in OPENCV (C++)
+face detection using haarcascades,lpbcascades, and DNN.
+implemented snapchat like filter
 
 
 FUTURE DEVELOPMENT-
