@@ -2,15 +2,15 @@
 #include "detectDNN.h"
 #include <iostream>
 
-void detectDNN(cv::dnn::Net net, cv::Mat &frame,cv::Mat png) {
+void detectDNN(cv::dnn::Net net, cv::Mat &frame, cv::Mat png) {
 
 	const size_t inWidth = 150;
 	const size_t inHeight = 150;
 	const double inScaleFactor = 1.0;
 	const float confidenceThreshold = 0.4;
 	const cv::Scalar meanVal(50, 109.0, 102.0);
-			int frameHeight = frame.rows;
-			int frameWidth = frame.cols;
+	int frameHeight = frame.rows;
+	int frameWidth = frame.cols;
 
 	//LOAD FRAME INTO A BLOB.
 #ifdef CAFFE
@@ -40,7 +40,7 @@ void detectDNN(cv::dnn::Net net, cv::Mat &frame,cv::Mat png) {
 			//CREATE RECTANGLE WITH POINTS
 			//cv::rectangle(frame, cv::Point(x1, y1), cv::Point(x2, y2), cv::Scalar(255, 0, 0), 2, 4);
 			cv::Rect ROI(cv::Point(x1, y1), cv::Point(x2, y2));
-		
+
 			//std::cout << png.channels() << std::endl;
 			cv::Mat mas;
 			std::vector<cv::Mat> rgb;
@@ -58,14 +58,14 @@ void detectDNN(cv::dnn::Net net, cv::Mat &frame,cv::Mat png) {
 
 				double centerX = ROI.x + .5*(ROI.width - 1);
 				double centery = ROI.y + .5*(ROI.height - 1);
-
+			}
 				cv::resize(png, png, cv::Size(ROI.width, ROI.height));
 				cv::resize(mas, mas, cv::Size(ROI.width, ROI.height));
-				png.copyTo(frame(cv::Rect(cv::Point(x1 - 15, y1 + 30), cv::Point(x2 - 15, y2 + 30))), mas);
+				png.copyTo(frame(cv::Rect(cv::Point(x1-15, y1+30 ), cv::Point(x2-15, y2+30))), mas);
 				//cv::imshow("yea",png  );
 		//png.copyTo(frame);
 			//std::cout << ROI.area();
 			}
 		}
 	}
-}
+
