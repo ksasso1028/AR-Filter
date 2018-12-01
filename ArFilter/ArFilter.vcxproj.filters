@@ -24,6 +24,9 @@
     <ClInclude Include="detectAndShow.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="detectDNN.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -36,6 +39,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="detectAndShow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="detectDNN.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
